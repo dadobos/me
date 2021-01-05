@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/projects/Projects.jsx"],"names":["Projects"],"mappings":"0KAUeA,G,KARE,WACf,OACE","file":"static/js/6.1222dc95.chunk.js","sourcesContent":["import React from 'react'\n\nconst Projects = () => {\n  return (\n    <div>\n      Projects ...in progress\n    </div>\n  )\n}\n\nexport default Projects\n"],"sourceRoot":""}
