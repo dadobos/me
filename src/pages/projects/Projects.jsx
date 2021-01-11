@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>
+    <div style={{ minHeight: 'calc(100vh-128px)' }}>
       Projects ...in progress
     </div>
   )

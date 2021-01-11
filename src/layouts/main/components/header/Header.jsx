@@ -7,7 +7,7 @@ import Navigation from './navigation';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    // position: 'relative',
+    position: 'relative',
     zIndex: 1301,
   },
 }));

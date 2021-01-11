@@ -4,6 +4,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import ErrorBoundary from './components/errorBoundary';
 import CustomRoute from './components/customRoute';
 import Main from '../layouts/main';
+import White from '../layouts/white';
 
 // const Main = lazy(() => import('layouts/main'));
 
@@ -19,7 +20,7 @@ const CustomRoutes = () => {
     <Suspense fallback={<CircularProgress color="secondary" />}>
       <ErrorBoundary>
         <Switch>
-          <CustomRoute exact path="/" component={Home} layout={Main} />
+          <CustomRoute exact path="/" component={Home} layout={White} />
           <CustomRoute exact path="/about" component={About} layout={Main} />
           <CustomRoute
             exact

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from 'react';
+import React, { useState, useEffect, createRef, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Container,
@@ -8,6 +8,9 @@ import {
   useMediaQuery,
   IconButton,
   SwipeableDrawer,
+  ListItem,
+  ListItemText,
+  List,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
@@ -24,16 +27,32 @@ const useStyles = makeStyles((theme) => ({
   drawerIcon: {
     height: '40px',
     width: '40px',
-    color: 'white',
+    color: theme.palette.secondary.main,
   },
-  drawer: { minWidth: '50vw' },
-  tab: {
+  drawer: {
+    minWidth: '60vw',
+    backgroundColor: theme.palette.secondary.main,
+  },
+  listitems: {
+    padding: '1.5rem 2rem ',
+    color: theme.palette.primary.main,
+    width: '100%',
+    '&:hover': {
+      backgroundColor: theme.palette.primary.main,
+      color: theme.palette.secondary.main,
+    },
+  },
+  listText: {
     alignItems: 'flex-start',
-    fontSize: '2rem',
+    fontSize: '1.5rem',
     textTransform: 'capitalize',
-
   },
-  right: {},
+  selected: {
+    '&.Mui-selected': {
+      backgroundColor: theme.palette.primary.main,
+      color: theme.palette.secondary.main,
+    },
+  },
 }));
 
 const Navigation = (props) => {
@@ -42,12 +61,14 @@ const Navigation = (props) => {
 
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
   const [openDrawer, setOpenDrawer] = useState(false);
+
+  const tabsActions = useRef(null);
+  
 
   const handleTabsChange = (e, newValue) => {
     setValue(newValue);
-    setOpenDrawer(false);
   };
 
   const open = () => {
@@ -57,6 +78,56 @@ const Navigation = (props) => {
     setOpenDrawer(false);
   };
   const wrapper = createRef();
+
+  const routes = useMemo(
+    () => [
+      {
+        name: 'Home',
+        link: '/',
+        activeIndex: 0,
+      },
+      {
+        name: 'Projects',
+        link: '/projects',
+        activeIndex: 1,
+      },
+      {
+        name: 'Games',
+        link: '/games',
+        activeIndex: 2,
+      },
+      {
+        name: 'Snippets',
+        link: '/snippets',
+        activeIndex: 3,
+      },
+      {
+        name: 'About',
+        link: '/about',
+        activeIndex: 4,
+      },
+    ],
+    []
+  );
+
+  useEffect(() => {
+    routes.forEach((route) => {
+      switch (window.location.pathname) {
+        case `${route.link}`:
+          if (value !== route.activeIndex) {
+            setValue(route.activeIndex);
+          }
+          break;
+        default:
+          return false;
+      }
+    });
+  }, [value, routes]);
+  useEffect(() => {
+    setTimeout(() => {
+      tabsActions.current?.updateIndicator();
+    }, 100);
+  });
 
   return (
     <Container ref={wrapper}>
@@ -84,52 +155,46 @@ const Navigation = (props) => {
           classes={{ paper: classes.drawer }}
         >
           <div className={classes.toolbar} />
-          <Tabs
-            value={value}
-            onChange={handleTabsChange}
-            orientation="vertical"
-            indicatorColor="primary"
-          >
-            <Tab
-              label="Home"
-              component={Link}
-              to="/"
-              classes={{ wrapper: classes.tab }}
-            />
-            <Tab
-              label="Projects"
-              component={Link}
-              to="/projects"
-              classes={{ wrapper: classes.tab }}
-            />
-            <Tab
-              label="Games"
-              component={Link}
-              to="/games"
-              classes={{ wrapper: classes.tab }}
-            />
-            <Tab
-              label="Snippets"
-              component={Link}
-              to="/snippets"
-              classes={{ wrapper: classes.tab }}
-            />
-            <Tab
-              label="About"
-              component={Link}
-              to="/about"
-              classes={{ wrapper: classes.tab }}
-            />
-          </Tabs>
+
+          <List disablePadding>
+            {routes.map((route) => (
+              <ListItem
+                className={classes.listitems}
+                key={`${route}${route.activeIndex}`}
+                button
+                component={Link}
+                to={route.link}
+                value={route.activeIndex}
+                selected={value === route.activeIndex}
+                classes={{ selected: classes.selected }}
+                onClick={() => {
+                  setValue(route.activeIndex);
+                  setOpenDrawer(false);
+                }}
+              >
+                <ListItemText disableTypography className={classes.listText}>
+                  {route.name}
+                </ListItemText>
+              </ListItem>
+            ))}
+          </List>
         </SwipeableDrawer>
       ) : (
         <Hidden smDown>
-          <Tabs value={value} onChange={handleTabsChange} centered>
-            <Tab label="Home" component={Link} to="/" />
-            <Tab label="Projects" component={Link} to="/projects" />
-            <Tab label="Games" component={Link} to="/games" />
-            <Tab label="Snippets" component={Link} to="/snippets" />
-            <Tab label="About" component={Link} to="/about" />
+          <Tabs
+            action={tabsActions}
+            value={value}
+            onChange={handleTabsChange}
+            centered
+          >
+            {routes.map((route) => (
+              <Tab
+                key={`${route.activeIndex}`}
+                label={route.name}
+                component={Link}
+                to={route.link}
+              />
+            ))}
           </Tabs>
         </Hidden>
       )}
