@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: '100vh',
     paddingTop: '2rem',
-    paddingBottom: '2rem',
+    // paddingBottom: '2rem',
     fallbacks: [
       { minHeight: '-moz-calc(100% - 128px)' },
       { minHeight: '-webkit-calc(100% - 128px)' },

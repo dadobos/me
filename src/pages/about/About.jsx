@@ -17,6 +17,11 @@ const useStyles = makeStyles((theme) => ({
   name: {
     textTransform: 'uppercase',
     letterSpacing: '2rem',
+    [theme.breakpoints.down('md')]: {
+      letterSpacing: '1rem',
+      fontSize: '1.4rem',
+      fontWeight: 'bold',
+    },
   },
 }));
 

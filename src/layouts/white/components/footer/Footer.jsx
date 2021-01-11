@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     width: '5rem',
     height: '5rem',
+    [theme.breakpoints.down('md')]: { width: '3rem', height: '3rem' },
   },
 }));
 
@@ -43,15 +44,8 @@ const Footer = (props) => {
   return (
     <Grid container justify="center" alignItems="center" id="footer">
       <ScrollTop {...props}>
-        <KeyboardArrowUpIcon
-          className={classes.icon}
-          style={{
-            width: '5rem',
-            height: '5rem',
-          }}
-        />
+        <KeyboardArrowUpIcon className={classes.icon} />
       </ScrollTop>
-      {/* <div style={{ height: '30rem' }} /> */}
     </Grid>
   );
 };
