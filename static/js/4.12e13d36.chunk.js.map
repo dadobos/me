@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/games/Games.jsx"],"names":["Games"],"mappings":"0KAMeA,G,KAJD,WACZ,OAAO","file":"static/js/4.12e13d36.chunk.js","sourcesContent":["import React from 'react';\n\nconst Games = () => {\n  return <div>Games ...in progress</div>;\n};\n\nexport default Games;\n"],"sourceRoot":""}

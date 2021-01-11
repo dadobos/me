@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/snippets/Snippets.jsx"],"names":["Snippets"],"mappings":"0KAMeA,G,KAJE,WACf,OAAO","file":"static/js/7.eb91a00d.chunk.js","sourcesContent":["import React from 'react';\n\nconst Snippets = () => {\n  return <div>Snippets ...in progress</div>;\n};\n\nexport default Snippets;\n"],"sourceRoot":""}
