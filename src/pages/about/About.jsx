@@ -72,10 +72,10 @@ const About = () => {
 
             <Grid item>
               <Typography align="right" inline="true" variant="h6">
-                A passionate software developer with afinity for React and AWS.
+                A passionate software developer with affinity for React and AWS.
                 <br />
                 Characterized by the desire of understanding and implementing
-                technological inovations.
+                technological innovations.
               </Typography>
             </Grid>
 
