@@ -62,18 +62,6 @@ const About = () => {
                 Dan Dobos
               </Typography>
             </Grid>
-            <Grid item>
-              <Link
-                variant="h6"
-                href="https://skilltransfers.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                gutterBottom
-              >
-                https://skilltransfers.com/
-              </Link>
-            </Grid>
 
             <Grid item>
               <Typography align="right" inline="true" variant="h6">
