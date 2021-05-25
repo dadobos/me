@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '@material-ui/core';
 import {
   ThemeProvider,
@@ -23,26 +23,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-let theme = createMuiTheme({
-  typography: {
-    fontFamily: 'Yeon Sung',
-    transform: 'matrix(1, 0, 0, 1, 0, 0)',
-    // h1: {
-    //   // marginLeft: '-.5rem',
-    //   paddingLeft: 0,
-    // },
-  },
-});
-theme = responsiveFontSizes(theme);
-
 const White = (props) => {
   const { children } = props;
   const classes = useStyles();
+  const [darkMode, setDarkMode] = useState(true);
+
+  let theme = createMuiTheme({
+    typography: {
+      fontFamily: 'Yeon Sung',
+      transform: 'matrix(1, 0, 0, 1, 0, 0)',
+      // h1: {
+      //   // marginLeft: '-.5rem',
+      //   paddingLeft: 0,
+      // },
+    },
+    palette: {
+      type: darkMode ? 'dark' : 'light',
+    },
+  });
+  theme = responsiveFontSizes(theme);
 
   return (
     <ThemeProvider theme={theme}>
       <div id="back-to-top-anchor" />
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Container className={classes.container}>{children}</Container>
       <Footer />
     </ThemeProvider>

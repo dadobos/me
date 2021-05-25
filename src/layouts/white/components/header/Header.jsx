@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -9,22 +9,25 @@ import {
   Link as MaterialLink,
   Grid,
 } from '@material-ui/core';
+import SwitchToogle from './switchToogle'
 import CachedOutlinedIcon from '@material-ui/icons/CachedOutlined';
-
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'fixed',
     zIndex: 1301,
-    backgroundColor: '#FAFAFA',
+    backgroundColor: 'transparent',
   },
   name: {
     textTransform: 'uppercase',
     letterSpacing: '.5rem',
   },
+  cached: {
+    color: '#a5d6a7',
+  },
 }));
-function handleClick(event) {
+const handleClick = (event) => {
   event.preventDefault();
   const anchor = (event.target.ownerDocument || document).querySelector(
     '#footer'
@@ -33,10 +36,11 @@ function handleClick(event) {
   if (anchor) {
     anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
-}
+};
 
-const Header = () => {
+const Header = (props) => {
   const classes = useStyles();
+  const { darkMode, setDarkMode } = props;
 
   return (
     <>
@@ -54,15 +58,25 @@ const Header = () => {
                   Dan Dobos
                 </Typography>
 
-                <MaterialLink color="textPrimary" to="#about" onClick={handleClick}>
+                <MaterialLink
+                  color="textPrimary"
+                  to="#about"
+                  onClick={handleClick}
+                >
                   About
                 </MaterialLink>
               </Breadcrumbs>
             </Grid>
-            <Grid item>
-              <Link color="textPrimary" to="/projects">
-                <CachedOutlinedIcon/>
+            <Grid item >
+              <Grid container alignItems="center">
+                <SwitchToogle
+              darkMode={darkMode}
+              setDarkMode={setDarkMode}
+              />
+                <Link to="/projects">
+                <CachedOutlinedIcon className={classes.cached} />
               </Link>
+              </Grid>
             </Grid>
           </Grid>
         </Toolbar>
