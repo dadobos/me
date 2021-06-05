@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-page"]=this["webpackJsonpreact-page"]||[]).push([[6],{158:function(e,t,c){"use strict";c.r(t),c.d(t,"default",(function(){return r}));var n=c(2),r=(c(0),function(){return Object(n.jsx)("div",{style:{minHeight:"calc(100vh-128px)"},children:"Projects ...in progress"})})}}]);
-//# sourceMappingURL=6.be327661.chunk.js.map
