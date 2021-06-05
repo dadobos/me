@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Grid, Typography } from '@material-ui/core';
+import {Grid, Typography } from '@material-ui/core';
 
 const Footer = () => {
   return (

@@ -123,12 +123,7 @@ const Navigation = (props) => {
       }
     });
   }, [value, routes]);
-  useEffect(() => {
-    setTimeout(() => {
-      tabsActions.current?.updateIndicator();
-    }, 100);
-  });
-
+  
   return (
     <Container ref={wrapper}>
       <Hidden mdUp>

@@ -8,33 +8,31 @@ import {
   Breadcrumbs,
   Link as MaterialLink,
   Grid,
+  IconButton
 } from '@material-ui/core';
 import DarkModeToogle from './darkModeToogle'
-import ArtTrackOutlinedIcon from '@material-ui/icons/ArtTrackOutlined';
 import { makeStyles } from '@material-ui/styles';
 import HideOnScroll from '../../../../common/hideOnScroll'
+import ThreeSixtyOutlinedIcon from '@material-ui/icons/ThreeSixtyOutlined';
 
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'fixed',
     zIndex: 1301,
-    backgroundColor: 'transparent',
+    background: 'transparent',
+    [theme.breakpoints.down('lg')]: {
+      backgroundColor: theme.palette.background.default,
+    },
   },
   name: {
     textTransform: 'uppercase',
     letterSpacing: '.5rem',
-  },
-  white: {
-    color: "#fff",
-  },
-  black: {
-    color: "#000",
-  },
+  }
   
 
 }));
-const handleClick = (event) => {
+const handleScrollDown = (event) => {
   event.preventDefault();
   const anchor = (event.target.ownerDocument || document).querySelector(
     '#footer'
@@ -45,10 +43,8 @@ const handleClick = (event) => {
   }
 };
 
-const Header = (props) => {
+const Header = () => {
   const classes = useStyles();
-  const { darkMode, setDarkMode } = props;
-
 
   return (
     <>
@@ -70,7 +66,7 @@ const Header = (props) => {
                 <MaterialLink
                   color="textPrimary"
                   to="#about"
-                  onClick={handleClick}
+                  onClick={handleScrollDown}
                 >
                   About
                 </MaterialLink>
@@ -78,13 +74,12 @@ const Header = (props) => {
             </Grid>
             <Grid item >
               <Grid container alignItems="center">
-                <DarkModeToogle
-              darkMode={darkMode}
-              setDarkMode={setDarkMode}
-              />
+                <DarkModeToogle/>
                 <Link to="/projects">
-                <ArtTrackOutlinedIcon className={darkMode ? classes.white: classes.black} />
-              </Link>
+                  <IconButton disableRipple>
+                    <ThreeSixtyOutlinedIcon  />
+                  </IconButton>
+                </Link>
               </Grid>
             </Grid>
           </Grid>

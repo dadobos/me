@@ -1,29 +1,22 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/styles';
+import React,{useContext} from 'react';
+import {IconButton} from '@material-ui/core'
+import {ThemeContext} from '../../../../../App'
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import NightsStayOutlinedIcon from '@material-ui/icons/NightsStayOutlined';
 
+const DarkModeToogle = () => {
 
-const useStyles = makeStyles((theme) => ({
- white: {
-  color: "#fff",
-  marginRight:'1rem'
-},
-black: {
-  color: "#000",
-  marginRight:'1rem'
-},
-}));
-
-const DarkModeToogle = (props) => {
-  const classes = useStyles();
-  const { darkMode, setDarkMode } = props;
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const icon = darkMode ?
+  <WbSunnyOutlinedIcon /> : <NightsStayOutlinedIcon />
 
   return (
-  <span onClick={() => setDarkMode(!darkMode)}>
-    {darkMode ?
-    <WbSunnyOutlinedIcon className={classes.white}/> : <NightsStayOutlinedIcon className={classes.black}/>}
-  </span>
+    <IconButton
+        disableRipple
+        onClick={() => setDarkMode(!darkMode)}
+  >
+    {icon}
+  </IconButton>
 
   );
 };
