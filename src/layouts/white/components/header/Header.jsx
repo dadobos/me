@@ -12,6 +12,7 @@ import {
 import DarkModeToogle from './darkModeToogle'
 import ArtTrackOutlinedIcon from '@material-ui/icons/ArtTrackOutlined';
 import { makeStyles } from '@material-ui/styles';
+import HideOnScroll from '../../../../common/hideOnScroll'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -52,7 +53,8 @@ const Header = (props) => {
   return (
     <>
       <CssBaseline />
-      <AppBar className={classes.appBar} position="fixed" elevation={0}>
+      <HideOnScroll>
+      <AppBar className={classes.appBar} elevation={0}>
         <Toolbar>
           <Grid container justify="space-between">
             <Grid item>
@@ -88,6 +90,7 @@ const Header = (props) => {
           </Grid>
         </Toolbar>
       </AppBar>
+      </HideOnScroll>
       <Toolbar />
     </>
   );
