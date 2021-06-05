@@ -9,9 +9,10 @@ import {
   Link as MaterialLink,
   Grid,
 } from '@material-ui/core';
-import SwitchToogle from './switchToogle'
-import CachedOutlinedIcon from '@material-ui/icons/CachedOutlined';
+import DarkModeToogle from './darkModeToogle'
+import ArtTrackOutlinedIcon from '@material-ui/icons/ArtTrackOutlined';
 import { makeStyles } from '@material-ui/styles';
+
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -23,9 +24,14 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'uppercase',
     letterSpacing: '.5rem',
   },
-  cached: {
-    color: '#a5d6a7',
+  white: {
+    color: "#fff",
   },
+  black: {
+    color: "#000",
+  },
+  
+
 }));
 const handleClick = (event) => {
   event.preventDefault();
@@ -41,6 +47,7 @@ const handleClick = (event) => {
 const Header = (props) => {
   const classes = useStyles();
   const { darkMode, setDarkMode } = props;
+
 
   return (
     <>
@@ -69,12 +76,12 @@ const Header = (props) => {
             </Grid>
             <Grid item >
               <Grid container alignItems="center">
-                <SwitchToogle
+                <DarkModeToogle
               darkMode={darkMode}
               setDarkMode={setDarkMode}
               />
                 <Link to="/projects">
-                <CachedOutlinedIcon className={classes.cached} />
+                <ArtTrackOutlinedIcon className={darkMode ? classes.white: classes.black} />
               </Link>
               </Grid>
             </Grid>
