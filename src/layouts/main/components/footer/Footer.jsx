@@ -20,7 +20,7 @@ const Footer = () => {
 					inline='true'
 					variant='body1'
 					fontFamily='Nanum Gothic Coding'>
-					Dan Dobos &copy; {getCurrentYear()} Build with passion
+					Dan Dobos &copy; {getCurrentYear()}
 				</Typography>
 			</Grid>
 		</Grid>

@@ -36,6 +36,12 @@ const Navigation = () => {
 		setValue(newValue);
 	};
 
+	const handleDrawerClose = () => {
+		setTimeout(() => {
+			setOpenDrawer(false);
+		}, 100);
+	};
+
 	const routes = useMemo(
 		() => [
 			{
@@ -73,14 +79,13 @@ const Navigation = () => {
 				case `${route.link}`:
 					if (value !== route.activeIndex) {
 						setValue(route.activeIndex);
-						setOpenDrawer(false);
 					}
 					break;
 				default:
 					return false;
 			}
 		});
-	}, [value, openDrawer, routes]);
+	}, [value, routes]);
 
 	return (
 		<Container ref={wrapper}>
@@ -138,7 +143,8 @@ const Navigation = () => {
 								selected={value === route.activeIndex}
 								onClick={() => {
 									setValue(route.activeIndex);
-									setOpenDrawer(false);
+
+									handleDrawerClose();
 								}}>
 								<ListItemText
 									disableTypography
