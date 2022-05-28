@@ -12,4 +12,4 @@ You can view it live [here](https://dadobos.github.io/me/).
 <code>npm run start</code> or just <code>npm start</code>
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000/me) to view it in the browser.

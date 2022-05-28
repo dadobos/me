@@ -33,6 +33,8 @@ export const TumbleWeed = '#CEA07E';
 export const TwilightLavander = '#754668';
 export const UARed = '#E01A4F';
 export const White = '#ffffff';
+export const VioletColorWheel = '#7E0FFF';
+export const SeaGreenCrayola = '#0FFFC1';
 
 // Main layout
 export const MainTheme = (mode) => ({
@@ -55,7 +57,10 @@ export const MainTheme = (mode) => ({
 			  }
 			: {
 					// palette values for dark mode
-					primary: { main: GrannySmithApple },
+					primary: {
+						main: GrannySmithApple,
+						contrastText: White,
+					},
 					secondary: {
 						main: UARed,
 						contrastText: White,
@@ -75,7 +80,9 @@ export const MainTheme = (mode) => ({
 		contrastThreshold: 3,
 		tonalOffset: 0.2,
 	},
-	overrides,
+	components: {
+		...overrides,
+	},
 });
 
 // Landing page
@@ -89,6 +96,8 @@ export const LandingWhite = (theme) =>
 			palette: {
 				mode: theme.palette.mode,
 			},
-			overrides,
+			components: {
+				...overrides,
+			},
 		})
 	);

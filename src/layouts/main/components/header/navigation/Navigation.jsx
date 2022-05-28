@@ -102,7 +102,6 @@ const Navigation = () => {
 				<IconButton
 					size='large'
 					onClick={() => setOpenDrawer(!openDrawer)}
-					disableRipple
 					color='inherit'>
 					{openDrawer ? (
 						<MenuOpenIcon fontSize='inherit' />

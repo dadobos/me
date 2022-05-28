@@ -10,7 +10,7 @@ const Home = lazy(() => import('../pages/landing'));
 const About = lazy(() => import('../pages/about'));
 const Projects = lazy(() => import('../pages/projects'));
 const Games = lazy(() => import('../pages/games'));
-const BestPractices = lazy(() => import('../pages/bestPractices'));
+const BestPractices = lazy(() => import('../pages/best-practices'));
 
 export const CustomRoutes = () => {
 	return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Typography, Divider } from '@mui/material';
 import About from '../about';
 import Games from '../games';
-import BestPractices from '../bestPractices';
+import BestPractices from '../best-practices';
 import Projects from '../projects';
 
 const Home = () => {

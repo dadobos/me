@@ -1,21 +1,33 @@
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Grid } from '@mui/material';
+import ProjectData from 'data/Data';
+import MainCard from 'components/main-card/MainCard';
 
 const Projects = () => {
 	return (
-		<div >
-			Projects ...in progress
-			<Box>
-				{[...new Array(52)]
-					.map(
-						() => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
-					)
-					.join('\n')}
-			</Box>
-		</div>
+		<Grid
+			container
+			direction='row'
+			alignItems='flex-start'
+			justifyContent='baseline'
+			spacing={4}
+			sx={{ my: 1 }}>
+			{ProjectData.map((project) => (
+				<Grid
+					item
+					xs={12}
+					sm={6}
+					md={4}
+					key={project.title}
+					sx={{ alignItems: 'center', justifyContent: 'center' }}>
+					<MainCard
+						imageURL={project.imageURL}
+						title={project.title}
+						description={project.description}
+					/>
+				</Grid>
+			))}
+		</Grid>
 	);
 };
 

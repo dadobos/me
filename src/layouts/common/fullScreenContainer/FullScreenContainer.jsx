@@ -9,7 +9,7 @@ const FullScreenContainer = (props) => {
 			maxWidth='lg'
 			sx={{
 				minHeight: 'calc(100vh - 24px )',
-				paddingTop: '4rem',
+				paddingTop: '6rem',
 				paddingBottom: '2rem',
 				flex: 1,
 				fallbacks: [
