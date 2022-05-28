@@ -15,7 +15,7 @@ import {
 import { useTheme } from '@mui/material/styles';
 import ThreeSixtyOutlinedIcon from '@mui/icons-material/ThreeSixtyOutlined';
 
-import DarkModeToogle from 'layouts/common/darkModeToogle';
+import DarkModeToggle from 'layouts/common/darkModeToggle';
 import HideOnScroll from 'layouts/common/hideOnScroll';
 
 const handleScrollDown = (event) => {
@@ -75,7 +75,7 @@ const Header = () => {
 											<ThreeSixtyOutlinedIcon />
 										</IconButton>
 									</Link>
-									<DarkModeToogle />
+									<DarkModeToggle />
 								</Grid>
 							</Grid>
 						</Grid>

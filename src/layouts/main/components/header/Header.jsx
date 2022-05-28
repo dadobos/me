@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AppBar, Toolbar, CssBaseline, Box } from '@mui/material';
 
-import DarkModeToogle from 'layouts/common/darkModeToogle';
+import DarkModeToggle from 'layouts/common/darkModeToggle';
 import HideOnScroll from 'layouts/common/hideOnScroll';
 import Navigation from './navigation';
 
@@ -15,7 +15,7 @@ const Header = () => {
 					<Toolbar>
 						<Navigation />
 						<Box sx={{ display: { sm: 'block', xs: 'none' } }}>
-							<DarkModeToogle />
+							<DarkModeToggle />
 						</Box>
 					</Toolbar>
 				</AppBar>

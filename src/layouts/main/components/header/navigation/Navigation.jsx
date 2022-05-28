@@ -16,7 +16,7 @@ import { useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
-import DarkModeToogle from 'layouts/common/darkModeToogle';
+import DarkModeToggle from 'layouts/common/darkModeToggle';
 
 const Navigation = () => {
 	const theme = useTheme();
@@ -109,7 +109,7 @@ const Navigation = () => {
 						<MenuIcon fontSize='inherit' />
 					)}
 				</IconButton>
-				<DarkModeToogle style={{ alignSelf: 'right', color: 'inherit' }} />
+				<DarkModeToggle style={{ alignSelf: 'right', color: 'inherit' }} />
 			</Paper>
 
 			{matches ? (

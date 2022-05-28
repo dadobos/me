@@ -5,12 +5,12 @@ import { ColorModeContext } from 'App';
 import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import NightsStayOutlinedIcon from '@mui/icons-material/NightsStayOutlined';
 
-const DarkModeToogle = () => {
+const DarkModeToggle = () => {
 	const theme = useTheme();
 	const colorMode = useContext(ColorModeContext);
 
 	return (
-		<IconButton disableRipple onClick={colorMode.toggleColorMode} sx={{ color: theme.palette.text.secondary }} >
+		<IconButton onClick={colorMode.toggleColorMode} sx={{ color: theme.palette.text.secondary }} >
 			{theme.palette.mode === 'dark' ? (
 				<WbSunnyOutlinedIcon />
 			) : (
@@ -20,4 +20,4 @@ const DarkModeToogle = () => {
 	);
 };
 
-export default DarkModeToogle;
+export default DarkModeToggle;
