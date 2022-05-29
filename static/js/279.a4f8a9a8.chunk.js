@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_page=self.webpackChunkreact_page||[]).push([[279],{279:function(e,c,n){n.r(c),n.d(c,{default:function(){return t}});n(2791);var r=n(184),t=function(){return(0,r.jsx)("div",{sx:{minHeight:"calc(100vh-128px)"},children:"Best Practices ...in progress"})}}}]);
-//# sourceMappingURL=279.a4f8a9a8.chunk.js.map
