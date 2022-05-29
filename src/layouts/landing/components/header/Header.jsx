@@ -54,7 +54,7 @@ const Header = () => {
 										variant='h5'
 										sx={{
 											textTransform: 'uppercase',
-											letterSpacing: '.3rem',
+											letterSpacing: '.2rem',
 										}}>
 										Dan Dobos
 									</Typography>

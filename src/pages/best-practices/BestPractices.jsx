@@ -1,8 +1,12 @@
 import React from 'react';
+import { CSSData } from 'data/Data';
+import MainAccordion from 'components/main-accordion/MainAccordion';
 
 const BestPractices = () => {
 	return (
-		<div sx={{ minHeight: 'calc(100vh-128px)' }}>Best Practices ...in progress</div>
+		<>
+			<MainAccordion items={CSSData} title='CSS Only' />
+		</>
 	);
 };
 

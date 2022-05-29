@@ -1,15 +1,16 @@
 import React from 'react';
-import Card from '@mui/material/Card';
 import {
+	Card,
 	CardContent,
 	CardMedia,
 	CardActionArea,
 	Typography,
 } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import { VioletColorWheel, SeaGreenCrayola } from 'themes/Theme';
 
-const MainCard = ({ imageURL, title, description }) => {
+import { useTheme } from '@mui/material/styles';
+import { VioletColorWheel, SeaGreenCrayola } from 'themes/Colors';
+
+const MainCard = ({  imageURL, title, description, url }) => {
 	const theme = useTheme();
 	const shadowColor =
 		theme.palette.mode === 'dark' ? SeaGreenCrayola : VioletColorWheel;
@@ -27,12 +28,14 @@ const MainCard = ({ imageURL, title, description }) => {
 				},
 			}}>
 			<CardActionArea>
-				<CardMedia component='img' height='180' image={imageURL} alt={title} />
+			<CardMedia component='img' height='150' image={imageURL} alt={title} />
 				<CardContent color='white'>
 					<Typography gutterBottom variant='h6' component='div'>
 						{title}
 					</Typography>
-					{/* <Typography variant='body2'>{description}</Typography> */}
+					{{ description } !== '' && (
+						<Typography variant='body2'>{description}</Typography>
+					)}
 				</CardContent>
 			</CardActionArea>
 		</Card>
