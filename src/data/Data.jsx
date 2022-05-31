@@ -1,48 +1,48 @@
 export const FreeCodeCampData = [
 	{
-		videoURL:
-			'https://res.cloudinary.com/dadobos/video/upload/v1653827756/web/TechnicalDocumentationPage_h03qkv',
+		// videoURL:
+		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827756/web/TechnicalDocumentationPage_h03qkv',
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1653827744/web/TechnicalDocumentationPage_pbudut',
 		title: 'Technical Documentation',
 		description: '',
-		url: 'https://codepen.io/diaid/pen/PoopdWd',
+		url: 'https://codepen.io/diaid/full/PoopdWd',
 	},
 	{
-		videoURL:
-			'https://res.cloudinary.com/dadobos/video/upload/v1653827749/web/TributePage_iarfpr',
+		// videoURL:
+		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827749/web/TributePage_iarfpr',
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1653827749/web/TributePage_hpxmr6',
 		title: 'Tribut Page',
 		description: '',
-		url: 'https://codepen.io/diaid/pen/MWWeorj',
+		url: 'https://codepen.io/diaid/full/MWWeorj',
 	},
 	{
-		videoURL:
-			'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/SurveyForm_g0ornr',
+		// videoURL:
+		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/SurveyForm_g0ornr',
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1653827742/web/SurveyForm_upho4b',
 		title: 'Survey Form',
 		description: '',
-		url: 'https://codepen.io/diaid/pen/jOOMBeL',
+		url: 'https://codepen.io/diaid/full/jOOMBeL',
 	},
 	{
-		videoURL:
-			'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/ProductLandingPage_fqwfjg',
+		// videoURL:
+		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/ProductLandingPage_fqwfjg',
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1653827745/web/ProductLandingPage_hebmnn',
 		title: 'Product Landing Page',
 		description: '',
-		url: 'https://codepen.io/diaid/pen/GRRrKLW',
+		url: 'https://codepen.io/diaid/full/GRRrKLW',
 	},
 	{
-		videoURL:
-			'https://res.cloudinary.com/dadobos/video/upload/v1653827745/web/PersonalPortofolio_nibw6t',
+		// videoURL:
+		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827745/web/PersonalPortofolio_nibw6t',
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1653827743/web/PersonalPortofolio_exblcg',
 		title: 'Personal Portofolio',
 		description: '',
-		url: 'https://codepen.io/diaid/pen/YzzVgwK',
+		url: 'https://codepen.io/diaid/full/YzzVgwK',
 	},
 ];
 

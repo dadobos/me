@@ -40,6 +40,7 @@ const MainAccordion = ({items, title}) => {
 								imageURL={project.imageURL}
 								title={project.title}
 								description={project.description}
+								url={project.url}
 							/>
 						</Grid>
 					))}
