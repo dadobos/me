@@ -6,7 +6,7 @@ import { ColorModeContext } from 'App';
 import { LandingWhite } from 'themes/Theme';
 import FullScreenContainer from 'layouts/common/fullScreenContainer';
 
-import Footer from './components/footer';
+import BackToTop from '../common/backToTop';
 import Header from './components/header';
 
 const LandingLayout = (props) => {
@@ -19,8 +19,10 @@ const LandingLayout = (props) => {
 			<ThemeProvider theme={LandingWhite}>
 				<div id='back-to-top-anchor' />
 				<Header />
-				<FullScreenContainer>{children}</FullScreenContainer>
-				<Footer />
+				<FullScreenContainer>
+					{children}
+					<BackToTop />
+				</FullScreenContainer>
 			</ThemeProvider>
 		</ColorModeContext.Provider>
 	);

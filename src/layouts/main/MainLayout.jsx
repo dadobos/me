@@ -3,21 +3,21 @@ import React from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
 import FullScreenContainer from 'layouts/common/fullScreenContainer';
+import BackToTop from '../common/backToTop';
 
 const MainLayout = (props) => {
 	const { children } = props;
 
 	return (
-		<div
-			sx={{
-				minHeight: '100vh',
-				display: 'flex',
-				flexDirection: 'column',
-			}}>
+		<>
+			<div id='back-to-top-anchor' />
 			<Header />
-			<FullScreenContainer>{children}</FullScreenContainer>
+			<FullScreenContainer>
+				{children}
+				<BackToTop />
+			</FullScreenContainer>
 			<Footer />
-		</div>
+		</>
 	);
 };
 

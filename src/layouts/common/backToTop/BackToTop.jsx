@@ -1,14 +1,15 @@
 import React from 'react';
 
-import useScrollTrigger from '@mui/material/useScrollTrigger';
+import { Grid, Grow, useScrollTrigger } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { Grid, Grow, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-
 
 function ScrollTop(props) {
 	const { children, window } = props;
 
+	// Note that you normally won't need to set the window ref as useScrollTrigger
+	// will default to window.
+	// This is only being set here because the demo is in an iframe.
 	const trigger = useScrollTrigger({
 		target: window ? window() : undefined,
 		disableHysteresis: true,
@@ -26,22 +27,28 @@ function ScrollTop(props) {
 	};
 
 	return (
-		<Grow
-			in={trigger}
-			style={{ transformOrigin: '0 0 0' }}
-			{...(trigger ? { timeout: 1000 } : {})}>
-			<Box onClick={handleClick} role='presentation'>
+		<Grow in={trigger}>
+			<div onClick={handleClick} role='presentation'>
 				{children}
-			</Box>
+			</div>
 		</Grow>
 	);
 }
 
-const Footer = (props) => {
+const BackToTop = (props) => {
 	const theme = useTheme();
 	return (
-		<Grid container justifyContent='center' alignItems='center' id='footer'>
-			<ScrollTop {...props} >
+		<Grid
+			sx={{
+				position: 'fixed',
+				bottom: theme.spacing(2),
+				right: theme.spacing(2),
+			}}
+			container
+			justifyContent='center'
+			alignItems='center'
+			id='footer'>
+			<ScrollTop {...props}>
 				<KeyboardArrowUpIcon
 					sx={{
 						width: '5rem',
@@ -53,4 +60,4 @@ const Footer = (props) => {
 		</Grid>
 	);
 };
-export default Footer;
+export default BackToTop;
