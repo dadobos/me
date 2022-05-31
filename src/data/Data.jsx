@@ -89,3 +89,12 @@ export const JavaData = [
 		url: 'https://github.com/dadobos/Billing-System',
 	},
 ];
+export const VueData = [
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1654030260/web/WorldCountries_ekx2of.png',
+		title: 'World Countries',
+		description: '',
+		url: 'https://dadobos.github.io/worldcountries/',
+	}
+];
