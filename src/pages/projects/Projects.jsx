@@ -1,14 +1,15 @@
 import React from 'react';
-import { FreeCodeCampData, JavaData, WebsitesData, VueData } from 'data/Data';
+import { ReactData, JavaData, WebsitesData, VueData } from 'data/Data';
 import MainAccordion from 'components/main-accordion/MainAccordion';
 
 const Projects = () => {
 	return (
 		<>
-			<MainAccordion items={FreeCodeCampData} title='Free Code Camp' />
-			<MainAccordion items={JavaData} title='Java' />
-			<MainAccordion items={WebsitesData} title='Websites' />
+			{/* <MainAccordion items={FreeCodeCampData} title='Free Code Camp' /> */}
+			<MainAccordion items={ReactData} title='React' />
 			<MainAccordion items={VueData} title='Vue' />
+			<MainAccordion items={WebsitesData} title='HTML' />
+			<MainAccordion items={JavaData} title='Java' />
 		</>
 	);
 };

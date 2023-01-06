@@ -1,65 +1,10 @@
-export const FreeCodeCampData = [
-	{
-		// videoURL:
-		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827756/web/TechnicalDocumentationPage_h03qkv',
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653827744/web/TechnicalDocumentationPage_pbudut',
-		title: 'Technical Documentation',
-		description: '',
-		url: 'https://codepen.io/diaid/full/PoopdWd',
-	},
-	{
-		// videoURL:
-		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827749/web/TributePage_iarfpr',
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653827749/web/TributePage_hpxmr6',
-		title: 'Tribut Page',
-		description: '',
-		url: 'https://codepen.io/diaid/full/MWWeorj',
-	},
-	{
-		// videoURL:
-		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/SurveyForm_g0ornr',
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653827742/web/SurveyForm_upho4b',
-		title: 'Survey Form',
-		description: '',
-		url: 'https://codepen.io/diaid/full/jOOMBeL',
-	},
-	{
-		// videoURL:
-		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827744/web/ProductLandingPage_fqwfjg',
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653827745/web/ProductLandingPage_hebmnn',
-		title: 'Product Landing Page',
-		description: '',
-		url: 'https://codepen.io/diaid/full/GRRrKLW',
-	},
-	{
-		// videoURL:
-		// 	'https://res.cloudinary.com/dadobos/video/upload/v1653827745/web/PersonalPortofolio_nibw6t',
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653827743/web/PersonalPortofolio_exblcg',
-		title: 'Personal Portofolio',
-		description: '',
-		url: 'https://codepen.io/diaid/full/YzzVgwK',
-	},
-];
-
-export const CSSData = [
+export const ReactData = [
 	{
 		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653843087/web/AnchorTagHideComponents_vie5jq.png',
-		title: 'Anchor Tag Hide Components',
+			'https://res.cloudinary.com/dadobos/image/upload/v1673023170/web/uxfuyzap5kbs1si34g29.png',
+		title: 'Online Shop',
 		description: '',
-		url: 'https://codepen.io/diaid/full/MWOOogX',
-	},
-	{
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1653845210/web/RadioHideComponents_dvxpgw.png',
-		title: 'Radio Hide Components',
-		description: '',
-		url: 'https://codepen.io/diaid/full/qBVdgWW',
+		url: 'https://dadobos.github.io/online-shop/',
 	},
 ];
 
@@ -96,5 +41,36 @@ export const VueData = [
 		title: 'World Countries',
 		description: '',
 		url: 'https://dadobos.github.io/worldcountries/',
-	}
+	},
+];
+
+export const CSSData = [
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1673027279/web/msvc649ua0gahqegu31o.png',
+		title: 'Anchor Tag Hide Components',
+		description: '',
+		url: 'https://codepen.io/diaid/full/MWOOogX',
+	},
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1673027279/web/dprvsa15ocx3l34dxogo.png',
+		title: 'Radio Hide Components',
+		description: '',
+		url: 'https://codepen.io/diaid/full/qBVdgWW',
+	},
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1673025125/web/anidcin5lbxo2hced5i4.png',
+		title: 'Rounded Paragraph',
+		description: '',
+		url: 'https://codepen.io/diaid/full/QWxOgVm',
+	},
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1673027940/web/z9qn4wstdtzpr4cf5xtx.png',
+		title: 'Responsive Table',
+		description: '',
+		url: 'https://codepen.io/diaid/full/xxJRGMB',
+	},
 ];

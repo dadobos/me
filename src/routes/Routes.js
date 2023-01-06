@@ -9,7 +9,7 @@ import LandingLayout from '../layouts/landing';
 const Home = lazy(() => import('../pages/landing'));
 const About = lazy(() => import('../pages/about'));
 const Projects = lazy(() => import('../pages/projects'));
-const Games = lazy(() => import('../pages/games'));
+const Blog = lazy(() => import('../pages/blog'));
 const BestPractices = lazy(() => import('../pages/best-practices'));
 
 export const CustomRoutes = () => {
@@ -45,10 +45,10 @@ export const CustomRoutes = () => {
 					/>
 
 					<Route
-						path='games'
+						path='blog'
 						element={
 							<MainLayout>
-								<Games />
+								<Blog />
 							</MainLayout>
 						}
 					/>

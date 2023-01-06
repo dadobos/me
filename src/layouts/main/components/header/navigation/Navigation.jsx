@@ -55,13 +55,13 @@ const Navigation = () => {
 				activeIndex: 1,
 			},
 			{
-				name: 'Games',
-				link: '/games',
+				name: 'Best Practices',
+				link: '/best-practices',
 				activeIndex: 2,
 			},
 			{
-				name: 'Best Practices',
-				link: '/best-practices',
+				name: 'Blog',
+				link: '/blog',
 				activeIndex: 3,
 			},
 			{

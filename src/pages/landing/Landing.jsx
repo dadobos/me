@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography, Divider } from '@mui/material';
 import About from '../about';
-import Games from '../games';
+import Blog from '../blog';
 import BestPractices from '../best-practices';
 import Projects from '../projects';
 
@@ -17,15 +17,7 @@ const Home = () => {
 					<Projects />
 				</Grid>
 			</Grid>
-			<Grid item container direction='column'>
-				<Grid item>
-					<Typography variant='h3'>Games</Typography>
-					<Divider variant='inset' />
-				</Grid>
-				<Grid item>
-					<Games />
-				</Grid>
-			</Grid>
+
 			<Grid item container direction='column'>
 				<Grid item>
 					<Typography variant='h3'>Best Practices</Typography>
@@ -33,6 +25,16 @@ const Home = () => {
 				</Grid>
 				<Grid item>
 					<BestPractices />
+				</Grid>
+			</Grid>
+
+			<Grid item container direction='column'>
+				<Grid item>
+					<Typography variant='h3'>Blog</Typography>
+					<Divider variant='inset' />
+				</Grid>
+				<Grid item>
+					<Blog />
 				</Grid>
 			</Grid>
 
