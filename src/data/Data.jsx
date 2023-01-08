@@ -8,6 +8,16 @@ export const ReactData = [
 	},
 ];
 
+export const GoData = [
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1669538934/web/ng0ghejmlsmzhrgyuiz4.png',
+		title: 'Pokemon GO Templates',
+		description: '',
+		url: 'https://github.com/dadobos/pokemongotemplates',
+	},
+];
+
 export const WebsitesData = [
 	{
 		imageURL:
