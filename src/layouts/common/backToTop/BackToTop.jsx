@@ -42,11 +42,8 @@ const BackToTop = (props) => {
 			sx={{
 				position: 'fixed',
 				bottom: theme.spacing(2),
-				right: theme.spacing(2),
+				left: theme.spacing(1),
 			}}
-			container
-			justifyContent='center'
-			alignItems='center'
 			id='footer'>
 			<ScrollTop {...props}>
 				<KeyboardArrowUpIcon

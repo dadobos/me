@@ -18,17 +18,6 @@ import ThreeSixtyOutlinedIcon from '@mui/icons-material/ThreeSixtyOutlined';
 import DarkModeToggle from 'layouts/common/darkModeToggle';
 import HideOnScroll from 'layouts/common/hideOnScroll';
 
-const handleScrollDown = (event) => {
-	event.preventDefault();
-	const anchor = (event.target.ownerDocument || document).querySelector(
-		'#footer'
-	);
-
-	if (anchor) {
-		anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-	}
-};
-
 const Header = () => {
 	const theme = useTheme();
 
@@ -61,9 +50,8 @@ const Header = () => {
 
 									<MaterialLink
 										color='textPrimary'
-										to='#about'
-										style={{ cursor: 'pointer' }}
-										onClick={handleScrollDown}>
+										href='#about'
+										style={{ cursor: 'pointer' }}>
 										About
 									</MaterialLink>
 								</Breadcrumbs>
