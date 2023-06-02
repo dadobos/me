@@ -46,7 +46,7 @@
 		]
 	},
 	"devDependencies": {
-		"gh-pages": "^3.2.3"
+		"gh-pages": "^4.0.0"
 	},
 	"description": "This project is build with React and Material UI, and it holds a collection of projects, best practices, and technologies that I want to explore.",
 	"main": "index.js",

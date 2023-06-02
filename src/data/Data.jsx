@@ -6,6 +6,23 @@ export const ReactData = [
 		description: '',
 		url: 'https://dadobos.github.io/online-shop/',
 	},
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/tzoxavfsfa44z2o9wrgi.png',
+		title: 'React Quiz App',
+		description: '',
+		url: 'https://dadobos.github.io/react-quiz-app/',
+	},
+];
+
+export const AngularData = [
+	{
+		imageURL:
+			'https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/hwlqdp2quy1u7rmbgls6.png',
+		title: 'Angular Store',
+		description: '',
+		url: 'https://dadobos.github.io/angular-store',
+	},
 ];
 
 export const GoData = [
@@ -44,6 +61,7 @@ export const JavaData = [
 		url: 'https://github.com/dadobos/Billing-System',
 	},
 ];
+
 export const VueData = [
 	{
 		imageURL:
