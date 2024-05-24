@@ -38,9 +38,9 @@ const MainCard = ({ imageURL, title, description, url }) => {
 						image={imageURL}
 						alt={title}
 					/>
-					{{ description } !== '' && (
-						<Typography variant='body2'>{description}</Typography>
-					)}
+
+					<Typography variant='body2'>{description}</Typography>
+
 					<CardActionArea>
 						<CardContent
 							color='white'

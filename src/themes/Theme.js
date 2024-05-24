@@ -5,12 +5,17 @@ import {
 	DeepSpaceSparkle,
 	White,
 	Cadet,
+	Mango,
 	Black,
 	GrannySmithApple,
 	UARed,
 	OuterSpaceCrayola,
+	ChartreuseTraditional,
+	Charcoal,
+	Cultured,
 	SeaGreenCrayola,
 	VioletColorWheel,
+	AcidGreen,
 } from './Colors';
 
 // Main layout
@@ -21,41 +26,40 @@ export const MainTheme = (mode) => ({
 			? {
 					// palette values for light mode
 					primary: {
-						main: DeepSpaceSparkle,
-						contrastText: White,
+						main: Charcoal,
+						contrastText: AcidGreen,
 					},
 					secondary: {
-						main: Cadet,
-						contrastText: White,
+						main: UARed,
+						contrastText: AcidGreen,
 					},
-					divider: DeepSpaceSparkle,
+					divider: White,
 					background: {
-						default: White,
-						paper: DeepSpaceSparkle,
+						default: Charcoal,
+						paper: Charcoal,
 					},
 					text: {
-						primary: Black,
-						secondary: White,
-					},
-			  }
+						primary: AcidGreen,
+						secondary: AcidGreen,
+					},		  }
 			: {
 					// palette values for dark mode
 					primary: {
 						main: GrannySmithApple,
-						contrastText: White,
+						contrastText: AcidGreen,
 					},
 					secondary: {
 						main: UARed,
-						contrastText: White,
+						contrastText: AcidGreen,
 					},
-					divider: Cadet,
+					divider: AcidGreen,
 					background: {
-						default: OuterSpaceCrayola,
-						paper: OuterSpaceCrayola,
+						default: Charcoal,
+						paper: Charcoal,
 					},
 					text: {
-						primary: White,
-						secondary: White,
+						primary: AcidGreen,
+						secondary: AcidGreen,
 					},
 			  }),
 		lightAccent: { main: VioletColorWheel },
