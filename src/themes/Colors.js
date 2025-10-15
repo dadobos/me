@@ -52,3 +52,7 @@ export const UARed = '#E01A4F';
 export const VioletColorWheel = '#7E0FFF';
 export const White = '#ffffff';
 export const WildBlueYonder = '#99B2DD';
+export const DavysGray = '#565656';
+export const Periwinkle = '#B7B5E4';
+//The Pantone Color of the Year 2025, PANTONE 17-1230 Mocha Mousse aka Chamoisee
+export const Chamoisee = '#A47864';

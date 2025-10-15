@@ -2,20 +2,13 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 import overrides from './overrides';
 import {
-	DeepSpaceSparkle,
-	White,
-	Cadet,
-	Mango,
-	Black,
-	GrannySmithApple,
-	UARed,
-	OuterSpaceCrayola,
-	ChartreuseTraditional,
-	Charcoal,
-	Cultured,
-	SeaGreenCrayola,
-	VioletColorWheel,
 	AcidGreen,
+	SeaGreenCrayola,
+	UARed,
+	VioletColorWheel,
+    DavysGray,
+    Chamoisee,
+	White,
 } from './Colors';
 
 // Main layout
@@ -25,27 +18,31 @@ export const MainTheme = (mode) => ({
 		...(mode === 'light'
 			? {
 					// palette values for light mode
-					primary: {
-						main: Charcoal,
-						contrastText: AcidGreen,
+			 
+                	primary: {
+						main: Chamoisee,
+						contrastText: White,
 					},
 					secondary: {
 						main: UARed,
-						contrastText: AcidGreen,
+						contrastText: White,
 					},
-					divider: White,
+					divider: Chamoisee,
 					background: {
-						default: Charcoal,
-						paper: Charcoal,
+						default: Chamoisee,
+						paper: Chamoisee,
 					},
 					text: {
-						primary: AcidGreen,
-						secondary: AcidGreen,
-					},		  }
+						primary: White,
+						secondary: White,
+					},
+                
+                
+                }
 			: {
-					// palette values for dark mode
-					primary: {
-						main: GrannySmithApple,
+                // palette values for dark mode
+                	primary: {
+						main: DavysGray,
 						contrastText: AcidGreen,
 					},
 					secondary: {
@@ -54,13 +51,14 @@ export const MainTheme = (mode) => ({
 					},
 					divider: AcidGreen,
 					background: {
-						default: Charcoal,
-						paper: Charcoal,
+						default: DavysGray,
+						paper: DavysGray,
 					},
 					text: {
 						primary: AcidGreen,
 						secondary: AcidGreen,
-					},
+					},	
+
 			  }),
 		lightAccent: { main: VioletColorWheel },
 		darkAccent: { main: SeaGreenCrayola },

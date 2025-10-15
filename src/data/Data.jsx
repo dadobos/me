@@ -15,15 +15,15 @@ export const ReactData = [
 	},
 ];
 
-export const AngularData = [
-	{
-		imageURL:
-			'https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/hwlqdp2quy1u7rmbgls6.png',
-		title: 'Angular Store',
-		description: '',
-		url: 'https://dadobos.github.io/angular-store',
-	},
-];
+// export const AngularData = [
+// 	{
+// 		imageURL:
+// 			'https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/hwlqdp2quy1u7rmbgls6.png',
+// 		title: 'Angular Store',
+// 		description: '',
+// 		url: 'https://dadobos.github.io/angular-store',
+// 	},
+// ];
 
 export const GoData = [
 	{
