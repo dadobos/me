@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_page=self.webpackChunkreact_page||[]).push([[280],{280:(e,s,a)=>{a.r(s),a.d(s,{default:()=>r});a(5043);var c=a(579);const r=()=>(0,c.jsx)("div",{style:{minHeight:"calc(100vh-128px)"},children:"Blog ...in progress"})}}]);
+//# sourceMappingURL=280.0dda2050.chunk.js.map
