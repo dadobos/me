@@ -2,9 +2,9 @@ export const ReactData = [
 	{
 		imageURL:
 			'https://res.cloudinary.com/dadobos/image/upload/v1673023170/web/uxfuyzap5kbs1si34g29.png',
-		title: 'Online Shop',
+		title: 'React Shop',
 		description: '',
-		url: 'https://dadobos.github.io/online-shop/',
+		url: 'https://dadobos.github.io/react-shop/',
 	},
 	{
 		imageURL:
@@ -14,16 +14,6 @@ export const ReactData = [
 		url: 'https://dadobos.github.io/react-quiz-app/',
 	},
 ];
-
-// export const AngularData = [
-// 	{
-// 		imageURL:
-// 			'https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/hwlqdp2quy1u7rmbgls6.png',
-// 		title: 'Angular Store',
-// 		description: '',
-// 		url: 'https://dadobos.github.io/angular-store',
-// 	},
-// ];
 
 export const GoData = [
 	{
@@ -102,3 +92,10 @@ export const CSSData = [
 		url: 'https://codepen.io/diaid/full/xxJRGMB',
 	},
 ];
+
+
+export const PantoneBlog = [`For 2025, the Pantone Color Institute selects PANTONE 17-1230 Mocha Mousse, 
+a warming, brown hue imbued with richness. It nurtures us with its suggestion of the delectable qualities 
+of chocolate and coffee, answering our desire for comfort.`]
+
+
