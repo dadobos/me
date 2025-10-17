@@ -101,7 +101,7 @@ of chocolate and coffee, answering our desire for comfort.`]
 
 export const  BlogContent = [
 	{
-		title: 'Panetone color 2025', 
+		title: 'Pantone color 2025', 
 		description: [
 			'A Pantone color is a standardized, proprietary color created by the Pantone company, which assigns a unique code to each color. These colors are used in various industries to ensure color consistency across different materials and locations, as they provide a shared language for specifying and reproducing colors accurately. Pantone colors are often more vibrant and consistent than colors created with the standard CMYK or RGB color models.',
 			
