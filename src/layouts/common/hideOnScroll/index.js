@@ -1,1 +1,1 @@
-export { default } from './HideOnScroll.jsx';
+export { default } from "./HideOnScroll.jsx";

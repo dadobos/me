@@ -1,1 +1,1 @@
-export {default} from './BestPractices'
+export { default } from "./BestPractices";
