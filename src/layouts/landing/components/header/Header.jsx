@@ -64,11 +64,7 @@ const Header = () => {
 								<IconButton
 									aria-label="Projects"
 									size="large"
-									sx={{
-										// px: 2,
-										mx: 2,
-										color: theme.palette.text.secondary,
-									}}>
+									sx={{ color: theme.palette.text.secondary }}>
 									<ThreeSixtyIcon />
 								</IconButton>
 							</Link>

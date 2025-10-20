@@ -16,7 +16,6 @@ const DarkModeToggle = () => {
 			size="large"
 			sx={{
 				alignSelf: "right",
-				ml: 1,
 				color: theme.palette.text.secondary,
 				fontSize: "24px",
 			}}>

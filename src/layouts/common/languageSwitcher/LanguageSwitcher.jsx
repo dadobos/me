@@ -31,8 +31,6 @@ const LanguageSwitcher = () => {
 					size="large"
 					sx={{
 						alignSelf: "right",
-						mr: 1,
-						ml: 1,
 						color: theme.palette.text.secondary,
 						fontSize: "24px",
 					}}>
