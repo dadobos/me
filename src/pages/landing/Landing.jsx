@@ -9,7 +9,7 @@ import { useIntl } from "react-intl";
 const Home = () => {
 	const t = useIntl();
 	return (
-		<Grid2 container direction="row" alignItems="stretch" spacing={3}>
+		<Grid2 container direction="column" alignItems="stretch">
 			<Grid2 item container direction="column">
 				<Grid2 item>
 					<Typography variant="h3">
