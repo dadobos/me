@@ -18,7 +18,9 @@ const MainAccordion = ({ items, title }) => {
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
 				id="panel1a-header">
-				<Typography variant="h4">{title}</Typography>
+				<Typography variant="h5" component="h3">
+					{title}
+				</Typography>
 			</AccordionSummary>
 			<AccordionDetails>
 				<Grid2

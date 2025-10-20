@@ -31,7 +31,9 @@ const BlogAccordion = ({ blogContent }) => {
 					expandIcon={<ExpandMoreIcon />}
 					aria-controls={`panel-${itemIdx}-content`}
 					id={`panel-${itemIdx}-header`}>
-					<Typography variant="h4">{title}</Typography>
+					<Typography variant="h5" component="h3">
+						{title}
+					</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
 					{lines.map((lineContent, idx) => (

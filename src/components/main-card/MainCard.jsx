@@ -47,7 +47,7 @@ const MainCard = ({ imageURL, title, description, url }) => {
 						<CardContent
 							color="white"
 							onClick={() => window.open(url, "_blank")}>
-							<Typography gutterBottom variant="h5" component="div">
+							<Typography gutterBottom variant="h6" component="h4">
 								{title}
 							</Typography>
 						</CardContent>

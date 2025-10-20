@@ -12,7 +12,11 @@ const Home = () => {
 		<Grid2 container direction="column" alignItems="stretch">
 			<Grid2 container direction="column">
 				<Grid2>
-					<Typography variant="h3" marginTop={4} marginBottom={2}>
+					<Typography
+						variant="h4"
+						component="h2"
+						marginTop={4}
+						marginBottom={2}>
 						{t.formatMessage({
 							id: "navigation.projects",
 							defaultMessage: "Projects",
@@ -27,7 +31,11 @@ const Home = () => {
 
 			<Grid2 container direction="column">
 				<Grid2>
-					<Typography variant="h3" marginTop={4} marginBottom={2}>
+					<Typography
+						variant="h4"
+						component="h2"
+						marginTop={4}
+						marginBottom={2}>
 						{t.formatMessage({
 							id: "navigation.best-practices",
 							defaultMessage: "Best Practices",
@@ -42,7 +50,11 @@ const Home = () => {
 
 			<Grid2 container direction="column">
 				<Grid2>
-					<Typography variant="h3" marginTop={4} marginBottom={2}>
+					<Typography
+						variant="h4"
+						component="h2"
+						marginTop={4}
+						marginBottom={2}>
 						{t.formatMessage({
 							id: "navigation.blog",
 							defaultMessage: "Blog",
