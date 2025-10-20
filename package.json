@@ -1,64 +1,65 @@
 {
-  "name": "react-page",
-  "homepage": "https://dadobos.github.io/me/",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.12",
-    "@mui/material": "^7.3.4",
-    "@mui/styles": "^6.0.0",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.4",
-    "react-scripts": "^5.0.1",
-    "react-spring": "^10.0.3",
-    "styled-components": "^6.1.11",
-    "vanilla-tilt": "^1.8.1",
-    "web-vitals": "^5.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
-  "description": "This project is build with React and Material UI, and it holds a collection of projects, best practices, and technologies that I want to explore.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dadobos/me.git"
-  },
-  "author": "Dan Andrei Dobos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dadobos/me/issues"
-  }
+	"name": "react-page",
+	"homepage": "https://dadobos.github.io/me/",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mui/icons-material": "^6.5.0",
+		"@mui/material": "^6.5.0",
+		"@mui/styles": "^6.5.0",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@testing-library/react": "^16.3.0",
+		"@testing-library/user-event": "^14.6.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-intl": "^7.1.14",
+		"react-router-dom": "^7.9.4",
+		"react-scripts": "^5.0.1",
+		"react-spring": "^10.0.3",
+		"styled-components": "^6.1.11",
+		"vanilla-tilt": "^1.8.1",
+		"web-vitals": "^5.1.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
+	},
+	"description": "This project is build with React and Material UI, and it holds a collection of projects, best practices, and technologies that I want to explore.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dadobos/me.git"
+	},
+	"author": "Dan Andrei Dobos",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dadobos/me/issues"
+	}
 }

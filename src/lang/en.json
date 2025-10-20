@@ -1,0 +1,15 @@
+{
+	"navigation.home": "home",
+	"navigation.projects": "Projects",
+	"navigation.best-practices": "Best Practices",
+	"navigation.blog": "Blog",
+	"navigation.about": "About",
+	"blog.pantone.title": "Exploring Pantone Colors: A Journey Through Shades and Hues",
+	"blog.pantone.description.line1": "A Pantone color is a standardized, proprietary color created by the Pantone company, which assigns a unique code to each color. These colors are used in various industries to ensure color consistency across different materials and locations, as they provide a shared language for specifying and reproducing colors accurately. Pantone colors are often more vibrant and consistent than colors created with the standard CMYK or RGB color models.",
+
+	"blog.pantone.description.line2": "For 2025, the Pantone Color Institute selects PANTONE 17-1230 Mocha Mousse, a warming, brown hue imbued with richness. It nurtures us with its suggestion of the delectable qualities of chocolate and coffee, answering our desire for comfort.",
+
+	"blog.lighthouse.title": "How to achieve 100% on Lighthouse Audit",
+	"blog.lighthouse.description.line1": "Achieving a perfect score of 100% on a Lighthouse audit is a significant accomplishment that reflects a website's excellence in performance, accessibility, best practices, SEO, and progressive web app (PWA) standards. Lighthouse is an open-source tool developed by Google that helps developers improve the quality of their web pages by providing audits and recommendations across these key areas.",
+	"blog.lighthouse.description.line2": "The secret to achieving a perfect score of 100% on a Lighthouse audit lies in meticulous attention to detail and adherence to best practices across all evaluated categories. By optimizing performance through techniques such as lazy loading, minimizing render-blocking resources, and leveraging browser caching, you can significantly enhance page load times. Ensuring accessibility involves implementing semantic HTML, providing alternative text for images, and ensuring keyboard navigability. Following best practices includes using HTTPS, avoiding deprecated APIs, and ensuring responsive design. For SEO, optimizing meta tags, using descriptive URLs, and ensuring mobile-friendliness are crucial. Lastly, adhering to PWA standards by enabling service workers and providing a web app manifest can further boost the score. Continuous testing and iteration based on Lighthouse feedback are essential to maintain and improve the score over time."
+}
