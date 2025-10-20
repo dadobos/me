@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 
 import { AppContext } from "App";
-import { LandingWhite } from "themes/Theme";
+import { getLandingWhite } from "themes/Theme";
 import FullScreenContainer from "layouts/common/fullScreenContainer";
 
 import BackToTop from "../common/backToTop";
@@ -16,7 +16,7 @@ const LandingLayout = (props) => {
 
 	return (
 		<AppContext.Provider value={colorMode}>
-			<ThemeProvider theme={LandingWhite}>
+			<ThemeProvider theme={getLandingWhite}>
 				<div id="back-to-top-anchor" />
 				<Header />
 				<FullScreenContainer>

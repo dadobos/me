@@ -7,16 +7,16 @@ import {
   ThemeProvider,
   createTheme,
 } from "@mui/material/styles";
-import { MainTheme } from "./themes/Theme";
+import { getMainTheme } from "./themes/Theme";
 import { CustomRoutes } from "./routes/Routes";
 
 import messages from "./lang/index"; // new import
 // import LanguageSwitcher from "./components/LanguageSwitcher"; // new small component
 
 export const AppContext = createContext({
-  toggleColorMode: () => {},
+  toggleColorMode: () => { },
   locale: "en",
-  setLocale: () => {},
+  setLocale: () => { },
 });
 
 const App = () => {
@@ -57,7 +57,7 @@ const App = () => {
   );
 
   const theme = useMemo(
-    () => responsiveFontSizes(createTheme(MainTheme(mode))),
+    () => responsiveFontSizes(createTheme(getMainTheme(mode))),
     [mode],
   );
 
