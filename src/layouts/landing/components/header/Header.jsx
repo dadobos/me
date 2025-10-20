@@ -9,11 +9,11 @@ import {
 	Typography,
 	Breadcrumbs,
 	Link as MaterialLink,
-	Grid2,
 	IconButton,
+	Box,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import ThreeSixtyOutlinedIcon from "@mui/icons-material/ThreeSixtyOutlined";
+import ThreeSixtyIcon from "@mui/icons-material/ThreeSixtyOutlined";
 
 import LanguageSwitcher from "layouts/common/languageSwitcher";
 import DarkModeToggle from "layouts/common/darkModeToggle";
@@ -28,6 +28,7 @@ const Header = () => {
 			<HideOnScroll>
 				<AppBar
 					position="fixed"
+					component="nav"
 					sx={{
 						background: "transparent",
 						zIndex: 1301,
@@ -37,47 +38,43 @@ const Header = () => {
 					}}
 					elevation={0}>
 					<Toolbar>
-						<Grid2
-							container
-							sx={{
-								width: "100%",
-								justifyContent: "space-between",
-								alignItems: "center",
-							}}>
-							<Grid2 item>
-								<Breadcrumbs aria-label="breadcrumb">
-									<Typography
-										variant="h5"
-										sx={{
-											textTransform: "uppercase",
-											letterSpacing: ".2rem",
-										}}>
-										Dan Dobos
-									</Typography>
-									{/*href="#about" is used to navigate within the page  */}
-									<MaterialLink
-										color="textPrimary"
-										href="#about"
-										sx={{ cursor: "pointer" }}>
-										About
-									</MaterialLink>
-								</Breadcrumbs>
-							</Grid2>
-							<Grid2 item>
-								<Grid2 container alignItems="center">
-									<Link to="/projects">
-										<IconButton
-											aria-label="Projects"
-											disableRipple
-											sx={{ mr: 1, color: theme.palette.text.secondary }}>
-											<ThreeSixtyOutlinedIcon />
-										</IconButton>
-									</Link>
-									<LanguageSwitcher />
-									<DarkModeToggle />
-								</Grid2>
-							</Grid2>
-						</Grid2>
+						<Typography component="div" sx={{ flexGrow: 1, display: "block" }}>
+							<Breadcrumbs aria-label="breadcrumb">
+								<Typography
+									component="span"
+									sx={{
+										textTransform: "uppercase",
+										letterSpacing: ".2rem",
+										fontSize: "1.6rem",
+									}}>
+									Dan Dobos
+								</Typography>
+								{/*href="#about" is used to navigate within the page  */}
+								<MaterialLink
+									color="textPrimary"
+									href="#about"
+									sx={{ cursor: "pointer" }}>
+									About
+								</MaterialLink>
+							</Breadcrumbs>
+						</Typography>
+
+						<Box sx={{ display: "block" }}>
+							<Link to="/projects">
+								<IconButton
+									aria-label="Projects"
+									size="large"
+									sx={{
+										// px: 2,
+										mx: 2,
+										color: theme.palette.text.secondary,
+									}}>
+									<ThreeSixtyIcon />
+								</IconButton>
+							</Link>
+							<LanguageSwitcher />
+							<DarkModeToggle />
+						</Box>
 					</Toolbar>
 				</AppBar>
 			</HideOnScroll>

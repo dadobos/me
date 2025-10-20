@@ -18,7 +18,7 @@ const MainAccordion = ({ items, title }) => {
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
 				id="panel1a-header">
-				<Typography variant="h5">{title}</Typography>
+				<Typography variant="h4">{title}</Typography>
 			</AccordionSummary>
 			<AccordionDetails>
 				<Grid2
@@ -28,13 +28,7 @@ const MainAccordion = ({ items, title }) => {
 					justifyContent="baseline"
 					spacing={3}>
 					{items.map((project) => (
-						<Grid2
-							item
-							xs={12}
-							sm={6}
-							md={4}
-							key={project.title}
-							sx={{ alignItems: "center", justifyContent: "center" }}>
+						<Grid2 key={project.key + project.title}>
 							<MainCard
 								imageURL={project.imageURL}
 								title={project.title}

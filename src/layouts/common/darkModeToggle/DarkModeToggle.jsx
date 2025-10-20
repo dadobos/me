@@ -11,8 +11,15 @@ const DarkModeToggle = () => {
 
 	return (
 		<IconButton
+			aria-label="Dark Mode Toggle"
 			onClick={appContext.toggleColorMode}
-			sx={{ color: theme.palette.text.secondary }}>
+			size="large"
+			sx={{
+				alignSelf: "right",
+				ml: 1,
+				color: theme.palette.text.secondary,
+				fontSize: "24px",
+			}}>
 			{theme.palette.mode === "dark" ? (
 				<WbSunnyOutlinedIcon />
 			) : (

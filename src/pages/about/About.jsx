@@ -24,12 +24,12 @@ const About = () => {
 						alignItems="flex-end"
 						justifyContent="flex-end"
 						spacing={3}>
-						<Grid2 item>
-							<Typography variant="h4" align="right" inline="true">
+						<Grid2>
+							<Typography align="right" inline="true" sx={{ fontSize: "32px" }}>
 								Software Developer
 							</Typography>
 						</Grid2>
-						<Grid2 item>
+						<Grid2>
 							<Typography
 								variant="h1"
 								gutterBottom
@@ -48,14 +48,14 @@ const About = () => {
 							</Typography>
 						</Grid2>
 
-						<Grid2 item>
-							<Typography align="right" inline="true" variant="h6">
+						<Grid2>
+							<Typography align="right" inline="true" sx={{ fontSize: "22px" }}>
 								Characterized by the desire of understanding and implementing
 								technological innovations.
 							</Typography>
 						</Grid2>
 
-						<Grid2 item>
+						<Grid2>
 							<Typography align="right" inline="true">
 								Contact
 							</Typography>

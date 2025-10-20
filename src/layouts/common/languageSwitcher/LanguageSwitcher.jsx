@@ -10,15 +10,20 @@ const LanguageSwitcher = () => {
 	const appContext = useContext(AppContext);
 	return (
 		<IconButton
+			aria-label="Language Switcher"
 			onClick={() => {
 				const setLocale = appContext && appContext.setLocale;
 				if (typeof setLocale === "function") {
 					setLocale(appContext.locale === "en" ? "nl" : "en");
 				}
 			}}
+			size="large"
 			sx={{
-				color: theme.palette.text.secondary,
 				alignSelf: "right",
+				mr: 1,
+				ml: 1,
+				color: theme.palette.text.secondary,
+				fontSize: "24px",
 			}}>
 			{<LanguageOutlinedIcon />}
 		</IconButton>

@@ -31,11 +31,15 @@ const BlogAccordion = ({ blogContent }) => {
 					expandIcon={<ExpandMoreIcon />}
 					aria-controls={`panel-${itemIdx}-content`}
 					id={`panel-${itemIdx}-header`}>
-					<Typography variant="h5">{title}</Typography>
+					<Typography variant="h4">{title}</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
 					{lines.map((lineContent, idx) => (
-						<Typography key={`${itemIdx}-${idx}`} paragraph>
+						<Typography
+							key={`${itemIdx}-${idx}`}
+							variant="subtitle1"
+							style={{ fontSize: "18px" }}
+							paragraph>
 							{lineContent}
 						</Typography>
 					))}

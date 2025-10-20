@@ -15,7 +15,7 @@ const Footer = () => {
 				minHeight: "24px",
 			}}
 			justifyContent="center">
-			<Grid2 item>
+			<Grid2>
 				<Typography
 					inline="true"
 					variant="body1"
