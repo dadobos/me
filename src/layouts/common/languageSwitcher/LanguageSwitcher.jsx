@@ -10,10 +10,7 @@ import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 const LanguageSwitcher = () => {
 	const theme = useTheme();
 	const appContext = useContext(AppContext);
-	const currentLocale =
-		appContext && appContext.locale
-			? String(appContext.locale).toUpperCase()
-			: "EN";
+	const currentLocale = appContext && appContext.locale === "en" ? "NL" : "EN";
 
 	return (
 		<Tooltip
