@@ -2,14 +2,14 @@ export const ReactData = [
 	{
 		imageURL:
 			"https://res.cloudinary.com/dadobos/image/upload/v1673023170/web/uxfuyzap5kbs1si34g29.png",
-		title: "React Shop",
+		title: "Shop",
 		description: "",
 		url: "https://dadobos.github.io/react-shop/",
 	},
 	{
 		imageURL:
 			"https://res.cloudinary.com/dadobos/image/upload/v1685729092/web/tzoxavfsfa44z2o9wrgi.png",
-		title: "React Quiz App",
+		title: "Quiz App",
 		description: "",
 		url: "https://dadobos.github.io/react-quiz-app/",
 	},
@@ -90,5 +90,15 @@ export const CSSData = [
 		title: "Responsive Table",
 		description: "",
 		url: "https://codepen.io/diaid/full/xxJRGMB",
+	},
+];
+
+export const JSData = [
+	{
+		imageURL:
+			"https://res.cloudinary.com/dadobos/image/upload/v1761648607/web/ADOSIanaslkdfOASadkn.png",
+		title: "Vanilla TS/JS Carousel",
+		description: "",
+		url: "https://codepen.io/diaid/pen/GgoGwva",
 	},
 ];

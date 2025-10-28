@@ -2,8 +2,11 @@ import React from "react";
 import { Container, Grid2, Typography, Link } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
+import { useIntl } from "react-intl";
+
 const About = () => {
 	const theme = useTheme();
+	const t = useIntl();
 
 	return (
 		<Container id="about">
@@ -50,8 +53,10 @@ const About = () => {
 
 						<Grid2>
 							<Typography align="right" inline="true" sx={{ fontSize: "22px" }}>
-								Characterized by the desire of understanding and implementing
-								technological innovations.
+								{t.formatMessage({
+									id: "about.description.line1",
+									defaultMessage: "Simple, better.",
+								})}
 							</Typography>
 						</Grid2>
 
